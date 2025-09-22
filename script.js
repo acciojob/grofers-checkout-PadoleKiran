@@ -10,7 +10,8 @@ const getSum = () => {
 	  sum += parseInt(cell.textContent, 10);
   });
 
-  alert("sum is " + sum);
+  // alert("sum is " + sum);
+	document.getElementById("ans").textContent = sum;
 };
 
 getSumBtn.addEventListener("click", getSum);
