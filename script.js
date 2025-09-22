@@ -3,8 +3,14 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 const getSum = () => {
-//Add your code here
-  
+  let sum = 0;
+  let s = document.querySelectorAll('.price');
+
+  s.forEach(cell => {
+	  sum += parseInt(cell.textContent, 10);
+  });
+
+  alert("sum is " + sum);
 };
 
 getSumBtn.addEventListener("click", getSum);
